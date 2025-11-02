@@ -58,8 +58,10 @@ signs:
       - "sign-blob"
       - "--yes"
       - "--bundle=${artifact}.bundle"
-      - "--output-signature=${signature}"
-      - "--output-certificate=${certificate}"
+      - "--output-signature"
+      - "${signature}"
+      - "--output-certificate"
+      - "${certificate}"
       - "${artifact}"
     artifacts: checksum
     output: true
