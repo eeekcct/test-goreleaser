@@ -49,9 +49,7 @@ jobs:
             dist/*.tar.gz
             dist/*.zip
             dist/*.txt
-            dist/*.pem
-            dist/*.sig
-            dist/*.bundle
+            dist/*.sigstore.json
             dist/*.sbom.json
 
   binary-provenance:
