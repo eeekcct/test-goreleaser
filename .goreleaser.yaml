@@ -65,7 +65,7 @@ signs:
     output: true
 
 release:
-  extra_fiels:
+  extra_files:
     - glob: dist/*.sig
   footer: >-
 
