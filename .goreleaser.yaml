@@ -56,10 +56,9 @@ sboms:
 
 signs:
   - cmd: cosign
-    certificate: "${artifact}.pem"
-    signature: "${artifact}.sig"
     args:
       - "sign-blob"
+      - "--use-signing-config=false"
       - "--oidc-provider=github"
       - "--output-signature=${signature}"
       - "--output-certificate=${certificate}"
