@@ -52,6 +52,7 @@ jobs:
             dist/*.sig
             dist/*.bundle
             dist/*.sbom.json
+
   binary-provenance:
     needs: [goreleaser]
     permissions:
