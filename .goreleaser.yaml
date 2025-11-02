@@ -58,18 +58,13 @@ signs:
       - "sign-blob"
       - "--yes"
       - "--bundle=${artifact}.bundle"
-      - "--output-signature"
-      - "${signature}"
-      - "--output-certificate"
-      - "${certificate}"
+      - "--output-signature=${signature}"
+      - "--output-certificate=${certificate}"
       - "${artifact}"
     artifacts: checksum
     output: true
 
 release:
-  extra_files:
-    - glob: dist/*.sig
-    - glob: dist/*.bundle
   footer: >-
 
     ---
