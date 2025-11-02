@@ -39,6 +39,7 @@ archives:
         formats: [zip]
     files:
       - dist/*.sig
+      - dist/*.bundle
 
 changelog:
   sort: asc
@@ -60,6 +61,7 @@ signs:
       - "--oidc-provider=github"
       - "--output-signature=${signature}"
       - "--output-certificate=${certificate}"
+      - "--bundle=${artifact}.bundle"
       - "${artifact}"
       - "--yes"
     artifacts: checksum
@@ -68,6 +70,7 @@ signs:
 release:
   extra_files:
     - glob: dist/*.sig
+    - glob: dist/*.bundle
   footer: >-
 
     ---
