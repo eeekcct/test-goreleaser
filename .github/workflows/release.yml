@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    uses: eeekcct/goreleaser-golang-workflow/.github/workflows/release.yml@support-immutable
+    uses: eeekcct/goreleaser-golang-workflow/.github/workflows/release.yml@c7e8e89e5e424ed8dc098f0b8af83a8b24bae412
     permissions:
       contents: write
       id-token: write
